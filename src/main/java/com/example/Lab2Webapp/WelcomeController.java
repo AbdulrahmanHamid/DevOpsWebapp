@@ -15,9 +15,9 @@ public class WelcomeController {
         String name = "Abdulrahman Hamid";
 
         if (hour < 12) {
-            return "Good morning, " + name + ", Welcome to COMP367";
+            return "Good morning, " + name + ". Welcome to COMP367";
         } else {
-            return "Good afternoon, " + name + ", Welcome to COMP367";
+            return "Good afternoon, " + name + ". Welcome to COMP367";
         }
         
     }
