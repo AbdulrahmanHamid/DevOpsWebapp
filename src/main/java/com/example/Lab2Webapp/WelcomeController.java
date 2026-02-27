@@ -12,7 +12,7 @@ public class WelcomeController {
     public String welcome() {
         LocalTime time = LocalTime.now();
         int hour = time.getHour();
-        String name = "John";
+        String name = "Abdulrahman Hamid";
 
         if (hour < 12) {
             return "Good morning, " + name + ", Welcome to COMP367";
