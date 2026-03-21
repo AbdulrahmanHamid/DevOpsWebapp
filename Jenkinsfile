@@ -5,14 +5,14 @@ pipeline {
     }
     
     stages {
-        // Stage 1: Check out the source code from GitHub
+        // Stage 1: Check out the code from GitHub
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/AbdulrahmanHamid/DevOpsWebapp.git'
             }
         }
         
-        // Stage 2: Build the Maven project into a .jar file
+        // Stage 2: Build the Maven project
         stage('Build Maven Project') {
             steps {
                 bat 'mvnw.cmd clean package -DskipTests'
